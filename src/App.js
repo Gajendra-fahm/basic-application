@@ -1,13 +1,16 @@
-import logo from './logo.svg';
+import { createBrowserRouter } from 'react-router-dom';
 import './App.css';
+import HomePage from './Component/Pages/HomePage';
 
 function App() {
-  return (
-    <div className="App">
-      This is new application
-      <p>hello - Gajendra Kumar How are you</p>
-    </div>
-  );
-}
+  const router = createBrowserRouter([
+    {
+			path: "/",
+			element: <HomePage />
+		},
+  ])
+
+  return router;
+} 
 
 export default App;
